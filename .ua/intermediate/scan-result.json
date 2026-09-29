@@ -1,0 +1,4146 @@
+{
+  "name": "aihot",
+  "description": "行业热点网站框架：从信源采集资料，用模型筛选、评分并写成中文摘要，把同一事件归组后生成日报，再通过网站、RSS、公开 API 和 MCP 对外提供。 Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "config",
+    "css",
+    "dockerfile",
+    "json",
+    "jsonl",
+    "markdown",
+    "sql",
+    "typescript",
+    "unknown",
+    "yaml"
+  ],
+  "frameworks": [
+    "Docker",
+    "Docker Compose",
+    "GitHub Actions",
+    "React",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  "files": [
+    {
+      "path": ".claude/launch.json",
+      "language": "json",
+      "sizeLines": 17,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "sizeLines": 11,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 119,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "language": "yaml",
+      "sizeLines": 104,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 29,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "NOTICE",
+      "language": "unknown",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/api/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/src/app.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/http/respond.ts",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/og/poster.ts",
+      "language": "typescript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/og/render.ts",
+      "language": "typescript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/admin-auth.ts",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/admin.ts",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/feedback.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/feeds.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/ingest.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/leaderboard.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/mcp.ts",
+      "language": "typescript",
+      "sizeLines": 306,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/media.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/og.ts",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/site.ts",
+      "language": "typescript",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/static.ts",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/routes/v1.ts",
+      "language": "typescript",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/app/app.css",
+      "language": "css",
+      "sizeLines": 534,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/web/app/components/CodeBlock.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/Logo.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/icons.tsx",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/shell/Chrome.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/shell/MobileTabBar.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/shell/Sidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/shell/ThemeSwitch.tsx",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/shell/nav.ts",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Badge.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Controls.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/IntentLink.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Kicker.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Menu.tsx",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Page.tsx",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Presence.tsx",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Score.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/SourceAvatar.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/components/ui/Tabs.tsx",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/about/SignalRiver.tsx",
+      "language": "typescript",
+      "sizeLines": 579,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/action.ts",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/charts.tsx",
+      "language": "typescript",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/format.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/labels.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/toast.tsx",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/admin/ui.tsx",
+      "language": "typescript",
+      "sizeLines": 356,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/changelog/text.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/copy/CopyPage.tsx",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/DayList.tsx",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/FeedItem.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/Filters.tsx",
+      "language": "typescript",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/HotTopics.tsx",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/ReadingGroup.tsx",
+      "language": "typescript",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/Timeline.tsx",
+      "language": "typescript",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/parts.tsx",
+      "language": "typescript",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/restore.ts",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/feed/session-cache.ts",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/hot/Delta.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/hot/Faces.tsx",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/hot/Sparkline.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/item/MediaGallery.tsx",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/item/PosterSheet.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/item/QuotedPost.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/item/StoryFollowups.tsx",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/BoardTable.tsx",
+      "language": "typescript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/BoardTabs.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/Evidence.tsx",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/Podium.tsx",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/StatusChip.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/leaderboard/format.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/monitor/PostCard.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/monitor/ResetCalendar.tsx",
+      "language": "typescript",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/monitor/format.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/Halftone.tsx",
+      "language": "typescript",
+      "sizeLines": 342,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/IssueDots.tsx",
+      "language": "typescript",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/Nameplate.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/ReportLayout.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/ReportNav.tsx",
+      "language": "typescript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/ReportPaper.tsx",
+      "language": "typescript",
+      "sizeLines": 421,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/report/format.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/features/story/HeatChart.tsx",
+      "language": "typescript",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/admin.server.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/api.server.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/format.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/hydration.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/local-state.ts",
+      "language": "typescript",
+      "sizeLines": 336,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/markdown.ts",
+      "language": "typescript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/seo.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/lib/site-copy.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/root.tsx",
+      "language": "typescript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/about.tsx",
+      "language": "typescript",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin-login.tsx",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/audit.tsx",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/content-item.tsx",
+      "language": "typescript",
+      "sizeLines": 454,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/content.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/feedback.tsx",
+      "language": "typescript",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/index.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/models.tsx",
+      "language": "typescript",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/monitor.tsx",
+      "language": "typescript",
+      "sizeLines": 336,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/runs.tsx",
+      "language": "typescript",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/selectbench-run.tsx",
+      "language": "typescript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/selectbench.tsx",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/settings.tsx",
+      "language": "typescript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/source-new.tsx",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/source.tsx",
+      "language": "typescript",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/admin/sources.tsx",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/agent.tsx",
+      "language": "typescript",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/all.tsx",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/changelog.tsx",
+      "language": "typescript",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/codex-reset.tsx",
+      "language": "typescript",
+      "sizeLines": 253,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/daily-archive.tsx",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/feedback.tsx",
+      "language": "typescript",
+      "sizeLines": 267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/home.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/hot.tsx",
+      "language": "typescript",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/item-original.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/item.tsx",
+      "language": "typescript",
+      "sizeLines": 404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard-boards.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard-model.tsx",
+      "language": "typescript",
+      "sizeLines": 397,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard-rules.tsx",
+      "language": "typescript",
+      "sizeLines": 253,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard-source.tsx",
+      "language": "typescript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard-sources.tsx",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/leaderboard.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/more.tsx",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/privacy.tsx",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/report-detail.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/report-latest.tsx",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/search-busy.tsx",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/starred.tsx",
+      "language": "typescript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/story.tsx",
+      "language": "typescript",
+      "sizeLines": 433,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/terms.tsx",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/topic.tsx",
+      "language": "typescript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/app/routes/topics.tsx",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/package.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/react-router.config.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/server.ts",
+      "language": "typescript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/tests/cache.test.ts",
+      "language": "typescript",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/tests/request-cancellation.test.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/tests/session-cache.test.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/worker/package.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/worker/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/worker/src/schedules.ts",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/worker/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "assets/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "assets/leaderboard-sources/NOTICE.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "assets/model-providers/NOTICE.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "database/migrations/0001_core.sql",
+      "language": "sql",
+      "sizeLines": 279,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0002_events_reports.sql",
+      "language": "sql",
+      "sizeLines": 158,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0003_monitor_leaderboard_notify.sql",
+      "language": "sql",
+      "sizeLines": 212,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0004_admin_ops.sql",
+      "language": "sql",
+      "sizeLines": 107,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0005_grouping_state.sql",
+      "language": "sql",
+      "sizeLines": 7,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0006_embeddings.sql",
+      "language": "sql",
+      "sizeLines": 25,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0007_leaderboard_prices.sql",
+      "language": "sql",
+      "sizeLines": 16,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0008_monitor_display.sql",
+      "language": "sql",
+      "sizeLines": 12,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0009_selectbench.sql",
+      "language": "sql",
+      "sizeLines": 31,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0010_service_prices.sql",
+      "language": "sql",
+      "sizeLines": 16,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0011_lb_alias_unique.sql",
+      "language": "sql",
+      "sizeLines": 2,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0013_translation_attempts.sql",
+      "language": "sql",
+      "sizeLines": 10,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0014_pool_search.sql",
+      "language": "sql",
+      "sizeLines": 19,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0015_pool_freshness_idx.sql",
+      "language": "sql",
+      "sizeLines": 2,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0016_publication_fact_release_idx.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0017_sitemap_idx.sql",
+      "language": "sql",
+      "sizeLines": 2,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0018_publication_sort_at.sql",
+      "language": "sql",
+      "sizeLines": 14,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0019_seo_indexed.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0020_story_summary.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0021_seo_auto_index.sql",
+      "language": "sql",
+      "sizeLines": 5,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0022_receipt_attempts_budgets.sql",
+      "language": "sql",
+      "sizeLines": 49,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0023_processing_retry.sql",
+      "language": "sql",
+      "sizeLines": 10,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0024_grouping_overrides_digest_inputs.sql",
+      "language": "sql",
+      "sizeLines": 13,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0026_source_icon_checked.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0027_feedback_forward_error.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0028_selectbench_mean_score.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0029_source_config_content_public.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0030_collection_url_index.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0031_selected_ready_index.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0032_regroup_pending.sql",
+      "language": "sql",
+      "sizeLines": 7,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0033_receipt_budget_index.sql",
+      "language": "sql",
+      "sizeLines": 5,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0034_lz4_toast.sql",
+      "language": "sql",
+      "sizeLines": 6,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0036_open_source_defaults.sql",
+      "language": "sql",
+      "sizeLines": 8,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0037_x_article.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/migrations/0038_quote_translations.sql",
+      "language": "sql",
+      "sizeLines": 10,
+      "fileCategory": "data"
+    },
+    {
+      "path": "database/seeds/lb-models-2026-09-29.json",
+      "language": "json",
+      "sizeLines": 2238,
+      "fileCategory": "config"
+    },
+    {
+      "path": "database/seeds/lb-official-prices-2026-09-26.json",
+      "language": "json",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "deploy/Caddyfile",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 93,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docs/architecture.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/customize.md",
+      "language": "markdown",
+      "sizeLines": 124,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/deploy.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/leaderboard.md",
+      "language": "markdown",
+      "sizeLines": 53,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/selection.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/sources.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/README.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/brand/nameplates/index.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "industry/changelog.json",
+      "language": "json",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "industry/features.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "industry/gold.example.jsonl",
+      "language": "jsonl",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "industry/package.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "industry/pages/privacy.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/pages/terms.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/content-understanding.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/group-batch.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/group-definitions.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/group-method.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/group-pair.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/group-signal.md",
+      "language": "markdown",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/identity-context.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/prefilter.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/report-daily-lead.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/report-period.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/rules-answer-first-summary.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/rules-anti-hallucination.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/rules-domain.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/rules-self-contained-title.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/safety.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/selection-score.md",
+      "language": "markdown",
+      "sizeLines": 109,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/story-digest.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/structure.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-article-empty.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-article.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-long-post-quoted.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-long-post.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-short-post-quoted.md",
+      "language": "markdown",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/summarize-short-post.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/translate-body.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/translate-post.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/prompts/understand.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "industry/selection.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "industry/site.ts",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "industry/sources.json",
+      "language": "json",
+      "sizeLines": 388,
+      "fileCategory": "config"
+    },
+    {
+      "path": "industry/taxonomy.ts",
+      "language": "typescript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "industry/topics.json",
+      "language": "json",
+      "sizeLines": 577,
+      "fileCategory": "config"
+    },
+    {
+      "path": "industry/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/backend/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/backend/src/admin/auth.ts",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/content.ts",
+      "language": "typescript",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/feedback.ts",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/models.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/monitor.ts",
+      "language": "typescript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/runs.ts",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/selectbench.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/settings.ts",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/admin/sources.ts",
+      "language": "typescript",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/config.ts",
+      "language": "typescript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/content/extract.ts",
+      "language": "typescript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/content/materials.ts",
+      "language": "typescript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/content/sanitize.ts",
+      "language": "typescript",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/db.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/analyze.ts",
+      "language": "typescript",
+      "sizeLines": 455,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/input.ts",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/models.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/prompts.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/translate.ts",
+      "language": "typescript",
+      "sizeLines": 342,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/vocabulary.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/editorial/writing.ts",
+      "language": "typescript",
+      "sizeLines": 376,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/digest.ts",
+      "language": "typescript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/group.ts",
+      "language": "typescript",
+      "sizeLines": 864,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/hot-read.ts",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/hot.ts",
+      "language": "typescript",
+      "sizeLines": 213,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/merge.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/events/relate.ts",
+      "language": "typescript",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/ingest/items.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/content.ts",
+      "language": "typescript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/events.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/notify.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/publication.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/queue.ts",
+      "language": "typescript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/jobs/sources.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/directory.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "language": "typescript",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/csv.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/github.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/hf.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/identity.ts",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/index.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/rank.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/refresh.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/arena.ts",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/artificial-analysis.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/deepswe.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/epoch.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/eqbench.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/livebench.ts",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/mercor.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/taptap.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/terminal-bench.ts",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/sources/vals.ts",
+      "language": "typescript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/store.ts",
+      "language": "typescript",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/types.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/fetch/unzip.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/compute-worker.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/compute.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/inputs.ts",
+      "language": "typescript",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/kemeny.ts",
+      "language": "typescript",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/ndtr.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/run.ts",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/method/v15.ts",
+      "language": "typescript",
+      "sizeLines": 379,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/prices.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/read.ts",
+      "language": "typescript",
+      "sizeLines": 575,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/registry.ts",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/leaderboard/source-registry.json",
+      "language": "json",
+      "sizeLines": 1025,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/backend/src/lib/cache.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/lib/cursor.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/lib/http-fetch.ts",
+      "language": "typescript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/lib/ids.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/lib/text.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/lib/url.ts",
+      "language": "typescript",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/media/images.ts",
+      "language": "typescript",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/media/imgproxy.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/media/prepare.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/media/renditions.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/monitor/assemble.ts",
+      "language": "typescript",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/monitor/read.ts",
+      "language": "typescript",
+      "sizeLines": 335,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/monitor/recognize.ts",
+      "language": "typescript",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/monitor/scan.ts",
+      "language": "typescript",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/monitor/time.ts",
+      "language": "typescript",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/notify/deliver.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/notify/feishu.ts",
+      "language": "typescript",
+      "sizeLines": 203,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/notify/selected.ts",
+      "language": "typescript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/alerts.ts",
+      "language": "typescript",
+      "sizeLines": 285,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/backup.ts",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/feedback.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/heartbeat.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/indexnow.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/reports.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/retention.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/operations/watch.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/dajiala.ts",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/embeddings.ts",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/jina.ts",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/llm.ts",
+      "language": "typescript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/receipts.ts",
+      "language": "typescript",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/providers/socialdata.ts",
+      "language": "typescript",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/availability.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/detail.ts",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/feeds.ts",
+      "language": "typescript",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/followups.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/groups.ts",
+      "language": "typescript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/items.ts",
+      "language": "typescript",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/links.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/llms.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/monitor.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/og.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/pool.ts",
+      "language": "typescript",
+      "sizeLines": 208,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/publish.ts",
+      "language": "typescript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/reports.ts",
+      "language": "typescript",
+      "sizeLines": 370,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/rules.ts",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/sitemap.ts",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/stories.ts",
+      "language": "typescript",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/timeline.ts",
+      "language": "typescript",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/topics.ts",
+      "language": "typescript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/publication/v1.ts",
+      "language": "typescript",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/reports/compose.ts",
+      "language": "typescript",
+      "sizeLines": 291,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/site/contact.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/site/meta.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/site/stats.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/collect.ts",
+      "language": "typescript",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/config-keys.ts",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/icons.ts",
+      "language": "typescript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/json-list.ts",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/mp.ts",
+      "language": "typescript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/rss.ts",
+      "language": "typescript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/types.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/web-list.ts",
+      "language": "typescript",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/src/sources/x.ts",
+      "language": "typescript",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/backend/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/contracts/src/http-policy.ts",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/leaderboard.ts",
+      "language": "typescript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/mcp.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/monitor.ts",
+      "language": "typescript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/site.ts",
+      "language": "typescript",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/taxonomy.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/src/time.ts",
+      "language": "typescript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "reference/public-v1.openapi.json",
+      "language": "json",
+      "sizeLines": 3568,
+      "fileCategory": "config"
+    },
+    {
+      "path": "scripts/collect.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/delete-sources.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/enqueue-analysis.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/eval-selection.ts",
+      "language": "typescript",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/import-leaderboard-prices.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/init-env.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/lb-fetch-check.ts",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/lb-round.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/mcp-check.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/migrate.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/nameplates.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/regroup-events.ts",
+      "language": "typescript",
+      "sizeLines": 219,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/seed.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/smoke.ts",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/alerts.test.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/analyze-shutdown.test.ts",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/analyze.test.ts",
+      "language": "typescript",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/collection.test.ts",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/default-model.test.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/embeddings.test.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/events.test.ts",
+      "language": "typescript",
+      "sizeLines": 314,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/feedback-upload.test.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/feedback.test.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/hot-avatar-payload.test.ts",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/icons.test.ts",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/leaderboard-worker.test.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/listings.test.ts",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/materials.test.ts",
+      "language": "typescript",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/mcp-shutdown.test.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/media-performance.test.ts",
+      "language": "typescript",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/monitor.test.ts",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/publication.test.ts",
+      "language": "typescript",
+      "sizeLines": 386,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/receipts.test.ts",
+      "language": "typescript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/report-lead.test.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/rss-conditional.test.ts",
+      "language": "typescript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/setup.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/signals.test.ts",
+      "language": "typescript",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/source-rules.test.ts",
+      "language": "typescript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/sources.test.ts",
+      "language": "typescript",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/translate-shutdown.test.ts",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/translate.test.ts",
+      "language": "typescript",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tests/url.test.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/x-article.test.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/x-shards.test.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    }
+  ],
+  "totalFiles": 435,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".claude/launch.json": [],
+    ".dockerignore": [],
+    ".env.example": [],
+    ".github/workflows/check.yml": [],
+    "AGENTS.md": [],
+    "CLAUDE.md": [],
+    "Dockerfile": [],
+    "NOTICE": [],
+    "README.md": [],
+    "apps/api/package.json": [],
+    "apps/api/src/app.ts": [
+      "apps/api/src/http/respond.ts",
+      "apps/api/src/routes/admin-auth.ts",
+      "apps/api/src/routes/admin.ts",
+      "apps/api/src/routes/feeds.ts",
+      "apps/api/src/routes/ingest.ts",
+      "apps/api/src/routes/leaderboard.ts",
+      "apps/api/src/routes/mcp.ts",
+      "apps/api/src/routes/media.ts",
+      "apps/api/src/routes/og.ts",
+      "apps/api/src/routes/site.ts",
+      "apps/api/src/routes/static.ts",
+      "apps/api/src/routes/v1.ts"
+    ],
+    "apps/api/src/http/respond.ts": [],
+    "apps/api/src/main.ts": [
+      "apps/api/src/app.ts"
+    ],
+    "apps/api/src/og/poster.ts": [
+      "apps/api/src/og/render.ts"
+    ],
+    "apps/api/src/og/render.ts": [],
+    "apps/api/src/routes/admin-auth.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/src/routes/admin.ts": [
+      "apps/api/src/http/respond.ts",
+      "apps/api/src/routes/admin-auth.ts"
+    ],
+    "apps/api/src/routes/feedback.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/src/routes/feeds.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/src/routes/ingest.ts": [],
+    "apps/api/src/routes/leaderboard.ts": [
+      "apps/api/src/http/respond.ts",
+      "apps/api/src/routes/site.ts"
+    ],
+    "apps/api/src/routes/mcp.ts": [],
+    "apps/api/src/routes/media.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/src/routes/og.ts": [
+      "apps/api/src/og/poster.ts",
+      "apps/api/src/og/render.ts"
+    ],
+    "apps/api/src/routes/site.ts": [
+      "apps/api/src/http/respond.ts",
+      "apps/api/src/routes/feedback.ts"
+    ],
+    "apps/api/src/routes/static.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/src/routes/v1.ts": [
+      "apps/api/src/http/respond.ts"
+    ],
+    "apps/api/tsconfig.json": [],
+    "apps/web/app/app.css": [],
+    "apps/web/app/components/CodeBlock.tsx": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/components/Logo.tsx": [],
+    "apps/web/app/components/icons.tsx": [],
+    "apps/web/app/components/shell/Chrome.tsx": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/components/shell/MobileTabBar.tsx": [
+      "apps/web/app/components/shell/Sidebar.tsx",
+      "apps/web/app/components/shell/nav.ts"
+    ],
+    "apps/web/app/components/shell/Sidebar.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/shell/ThemeSwitch.tsx",
+      "apps/web/app/components/shell/nav.ts",
+      "apps/web/app/lib/local-state.ts"
+    ],
+    "apps/web/app/components/shell/ThemeSwitch.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/lib/local-state.ts"
+    ],
+    "apps/web/app/components/shell/nav.ts": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/components/ui/Badge.tsx": [],
+    "apps/web/app/components/ui/Controls.tsx": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/components/ui/IntentLink.tsx": [],
+    "apps/web/app/components/ui/Kicker.tsx": [],
+    "apps/web/app/components/ui/Menu.tsx": [
+      "apps/web/app/components/ui/Presence.tsx"
+    ],
+    "apps/web/app/components/ui/Page.tsx": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/components/ui/Presence.tsx": [],
+    "apps/web/app/components/ui/Score.tsx": [],
+    "apps/web/app/components/ui/SourceAvatar.tsx": [
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/components/ui/Tabs.tsx": [
+      "apps/web/app/components/ui/IntentLink.tsx",
+      "apps/web/app/lib/hydration.ts"
+    ],
+    "apps/web/app/features/about/SignalRiver.tsx": [
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/admin/action.ts": [
+      "apps/web/app/features/admin/toast.tsx"
+    ],
+    "apps/web/app/features/admin/charts.tsx": [
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/lib/hydration.ts"
+    ],
+    "apps/web/app/features/admin/format.ts": [],
+    "apps/web/app/features/admin/labels.ts": [],
+    "apps/web/app/features/admin/toast.tsx": [],
+    "apps/web/app/features/admin/ui.tsx": [
+      "apps/web/app/features/admin/format.ts"
+    ],
+    "apps/web/app/features/changelog/text.tsx": [
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/copy/CopyPage.tsx": [
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/lib/markdown.ts"
+    ],
+    "apps/web/app/features/feed/DayList.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/feed/FeedItem.tsx",
+      "apps/web/app/features/feed/Timeline.tsx",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/local-state.ts"
+    ],
+    "apps/web/app/features/feed/FeedItem.tsx": [
+      "apps/web/app/components/ui/Badge.tsx",
+      "apps/web/app/components/ui/IntentLink.tsx",
+      "apps/web/app/components/ui/Score.tsx",
+      "apps/web/app/features/feed/ReadingGroup.tsx",
+      "apps/web/app/features/feed/parts.tsx",
+      "apps/web/app/features/item/QuotedPost.tsx"
+    ],
+    "apps/web/app/features/feed/Filters.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Tabs.tsx"
+    ],
+    "apps/web/app/features/feed/HotTopics.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/hot/Faces.tsx"
+    ],
+    "apps/web/app/features/feed/ReadingGroup.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/features/feed/restore.ts",
+      "apps/web/app/features/feed/session-cache.ts",
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/feed/Timeline.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/features/feed/FeedItem.tsx",
+      "apps/web/app/features/feed/restore.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/local-state.ts"
+    ],
+    "apps/web/app/features/feed/parts.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/SourceAvatar.tsx",
+      "apps/web/app/lib/local-state.ts"
+    ],
+    "apps/web/app/features/feed/restore.ts": [
+      "apps/web/app/features/feed/session-cache.ts"
+    ],
+    "apps/web/app/features/feed/session-cache.ts": [],
+    "apps/web/app/features/hot/Delta.tsx": [],
+    "apps/web/app/features/hot/Faces.tsx": [
+      "apps/web/app/components/ui/SourceAvatar.tsx",
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/hot/Sparkline.tsx": [],
+    "apps/web/app/features/item/MediaGallery.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx"
+    ],
+    "apps/web/app/features/item/PosterSheet.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx"
+    ],
+    "apps/web/app/features/item/QuotedPost.tsx": [
+      "apps/web/app/components/icons.tsx"
+    ],
+    "apps/web/app/features/item/StoryFollowups.tsx": [
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/leaderboard/BoardTable.tsx": [
+      "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "apps/web/app/features/leaderboard/Evidence.tsx",
+      "apps/web/app/features/leaderboard/format.ts"
+    ],
+    "apps/web/app/features/leaderboard/BoardTabs.tsx": [
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/features/leaderboard/format.ts"
+    ],
+    "apps/web/app/features/leaderboard/BrandMark.tsx": [],
+    "apps/web/app/features/leaderboard/Evidence.tsx": [],
+    "apps/web/app/features/leaderboard/Podium.tsx": [
+      "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "apps/web/app/features/leaderboard/Evidence.tsx",
+      "apps/web/app/features/leaderboard/format.ts"
+    ],
+    "apps/web/app/features/leaderboard/StatusChip.tsx": [],
+    "apps/web/app/features/leaderboard/format.ts": [],
+    "apps/web/app/features/monitor/PostCard.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/components/ui/SourceAvatar.tsx",
+      "apps/web/app/features/monitor/format.ts"
+    ],
+    "apps/web/app/features/monitor/ResetCalendar.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/monitor/PostCard.tsx",
+      "apps/web/app/features/monitor/format.ts"
+    ],
+    "apps/web/app/features/monitor/format.ts": [],
+    "apps/web/app/features/report/Halftone.tsx": [],
+    "apps/web/app/features/report/IssueDots.tsx": [
+      "apps/web/app/features/report/format.ts"
+    ],
+    "apps/web/app/features/report/Nameplate.tsx": [],
+    "apps/web/app/features/report/ReportLayout.tsx": [
+      "apps/web/app/features/report/ReportNav.tsx"
+    ],
+    "apps/web/app/features/report/ReportNav.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/features/report/format.ts"
+    ],
+    "apps/web/app/features/report/ReportPaper.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Badge.tsx",
+      "apps/web/app/components/ui/Kicker.tsx",
+      "apps/web/app/components/ui/SourceAvatar.tsx",
+      "apps/web/app/features/report/Halftone.tsx",
+      "apps/web/app/features/report/IssueDots.tsx",
+      "apps/web/app/features/report/Nameplate.tsx",
+      "apps/web/app/features/report/format.ts",
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/report/format.ts": [
+      "apps/web/app/lib/format.ts"
+    ],
+    "apps/web/app/features/story/HeatChart.tsx": [
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/hydration.ts"
+    ],
+    "apps/web/app/lib/admin.server.ts": [],
+    "apps/web/app/lib/api.server.ts": [],
+    "apps/web/app/lib/format.ts": [],
+    "apps/web/app/lib/hydration.ts": [],
+    "apps/web/app/lib/local-state.ts": [],
+    "apps/web/app/lib/markdown.ts": [],
+    "apps/web/app/lib/seo.ts": [],
+    "apps/web/app/lib/site-copy.ts": [
+      "apps/web/app/lib/markdown.ts"
+    ],
+    "apps/web/app/root.tsx": [
+      "apps/web/app/app.css",
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/shell/Chrome.tsx",
+      "apps/web/app/components/shell/MobileTabBar.tsx",
+      "apps/web/app/components/shell/Sidebar.tsx",
+      "apps/web/app/components/ui/Controls.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/hydration.ts",
+      "apps/web/app/lib/local-state.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes.ts": [],
+    "apps/web/app/routes/about.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Controls.tsx",
+      "apps/web/app/components/ui/Kicker.tsx",
+      "apps/web/app/features/about/SignalRiver.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/admin-login.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/ui/Controls.tsx",
+      "apps/web/app/lib/api.server.ts"
+    ],
+    "apps/web/app/routes/admin/audit.tsx": [
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/content-item.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/content.tsx": [
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/feedback.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/index.tsx": [],
+    "apps/web/app/routes/admin/layout.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/shell/Chrome.tsx",
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/toast.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/models.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/monitor.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/runs.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/selectbench-run.tsx": [
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/selectbench.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/toast.tsx",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/settings.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/toast.tsx",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/source-new.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx"
+    ],
+    "apps/web/app/routes/admin/source.tsx": [
+      "apps/web/app/features/admin/action.ts",
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/admin/sources.tsx": [
+      "apps/web/app/features/admin/format.ts",
+      "apps/web/app/features/admin/labels.ts",
+      "apps/web/app/features/admin/ui.tsx",
+      "apps/web/app/lib/admin.server.ts"
+    ],
+    "apps/web/app/routes/agent.tsx": [
+      "apps/web/app/components/CodeBlock.tsx",
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/all.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/features/feed/DayList.tsx",
+      "apps/web/app/features/feed/Filters.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/changelog.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/features/changelog/text.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/local-state.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/codex-reset.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/monitor/PostCard.tsx",
+      "apps/web/app/features/monitor/ResetCalendar.tsx",
+      "apps/web/app/features/monitor/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/hydration.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/daily-archive.tsx": [
+      "apps/web/app/features/report/Nameplate.tsx",
+      "apps/web/app/features/report/ReportLayout.tsx",
+      "apps/web/app/features/report/ReportPaper.tsx",
+      "apps/web/app/features/report/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/feedback.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/lib/local-state.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/home.tsx": [
+      "apps/web/app/components/Logo.tsx",
+      "apps/web/app/features/feed/Filters.tsx",
+      "apps/web/app/features/feed/HotTopics.tsx",
+      "apps/web/app/features/feed/Timeline.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/hot.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Badge.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/features/hot/Delta.tsx",
+      "apps/web/app/features/hot/Faces.tsx",
+      "apps/web/app/features/hot/Sparkline.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/item-original.tsx": [
+      "apps/web/app/lib/api.server.ts"
+    ],
+    "apps/web/app/routes/item.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Badge.tsx",
+      "apps/web/app/components/ui/Menu.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/components/ui/Score.tsx",
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/features/feed/ReadingGroup.tsx",
+      "apps/web/app/features/feed/parts.tsx",
+      "apps/web/app/features/item/MediaGallery.tsx",
+      "apps/web/app/features/item/QuotedPost.tsx",
+      "apps/web/app/features/item/StoryFollowups.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/local-state.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/leaderboard-boards.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/leaderboard/BoardTabs.tsx"
+    ],
+    "apps/web/app/routes/leaderboard-model.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "apps/web/app/features/leaderboard/Evidence.tsx",
+      "apps/web/app/features/leaderboard/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/leaderboard-rules.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/features/leaderboard/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/leaderboard-source.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "apps/web/app/features/leaderboard/StatusChip.tsx",
+      "apps/web/app/features/leaderboard/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/leaderboard-sources.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/leaderboard/BrandMark.tsx",
+      "apps/web/app/features/leaderboard/StatusChip.tsx",
+      "apps/web/app/features/leaderboard/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/leaderboard.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/features/leaderboard/BoardTable.tsx",
+      "apps/web/app/features/leaderboard/Podium.tsx",
+      "apps/web/app/features/leaderboard/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/hydration.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/more.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/shell/ThemeSwitch.tsx",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/privacy.tsx": [
+      "apps/web/app/features/copy/CopyPage.tsx",
+      "apps/web/app/lib/seo.ts",
+      "apps/web/app/lib/site-copy.ts"
+    ],
+    "apps/web/app/routes/report-detail.tsx": [
+      "apps/web/app/features/report/ReportLayout.tsx",
+      "apps/web/app/features/report/ReportPaper.tsx",
+      "apps/web/app/features/report/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/report-latest.tsx": [
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/features/report/ReportLayout.tsx",
+      "apps/web/app/features/report/ReportPaper.tsx",
+      "apps/web/app/features/report/format.ts",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/search-busy.tsx": [
+      "apps/web/app/lib/seo.ts",
+      "apps/web/app/routes/all.tsx"
+    ],
+    "apps/web/app/routes/starred.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Presence.tsx",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/local-state.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/story.tsx": [
+      "apps/web/app/components/icons.tsx",
+      "apps/web/app/components/ui/Badge.tsx",
+      "apps/web/app/components/ui/Controls.tsx",
+      "apps/web/app/components/ui/Tabs.tsx",
+      "apps/web/app/features/story/HeatChart.tsx",
+      "apps/web/app/lib/format.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/terms.tsx": [
+      "apps/web/app/features/copy/CopyPage.tsx",
+      "apps/web/app/lib/seo.ts",
+      "apps/web/app/lib/site-copy.ts"
+    ],
+    "apps/web/app/routes/topic.tsx": [
+      "apps/web/app/components/ui/Page.tsx",
+      "apps/web/app/features/feed/DayList.tsx",
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/app/routes/topics.tsx": [
+      "apps/web/app/lib/api.server.ts",
+      "apps/web/app/lib/seo.ts"
+    ],
+    "apps/web/package.json": [],
+    "apps/web/react-router.config.ts": [],
+    "apps/web/server.ts": [],
+    "apps/web/tests/cache.test.ts": [
+      "apps/web/app/lib/api.server.ts"
+    ],
+    "apps/web/tests/request-cancellation.test.ts": [
+      "apps/web/app/lib/admin.server.ts",
+      "apps/web/app/lib/api.server.ts"
+    ],
+    "apps/web/tests/session-cache.test.ts": [
+      "apps/web/app/features/feed/session-cache.ts"
+    ],
+    "apps/web/tsconfig.json": [],
+    "apps/web/vite.config.ts": [],
+    "apps/worker/package.json": [],
+    "apps/worker/src/main.ts": [
+      "apps/worker/src/schedules.ts"
+    ],
+    "apps/worker/src/schedules.ts": [],
+    "apps/worker/tsconfig.json": [],
+    "assets/README.md": [],
+    "assets/leaderboard-sources/NOTICE.md": [],
+    "assets/model-providers/NOTICE.md": [],
+    "database/migrations/0001_core.sql": [],
+    "database/migrations/0002_events_reports.sql": [],
+    "database/migrations/0003_monitor_leaderboard_notify.sql": [],
+    "database/migrations/0004_admin_ops.sql": [],
+    "database/migrations/0005_grouping_state.sql": [],
+    "database/migrations/0006_embeddings.sql": [],
+    "database/migrations/0007_leaderboard_prices.sql": [],
+    "database/migrations/0008_monitor_display.sql": [],
+    "database/migrations/0009_selectbench.sql": [],
+    "database/migrations/0010_service_prices.sql": [],
+    "database/migrations/0011_lb_alias_unique.sql": [],
+    "database/migrations/0013_translation_attempts.sql": [],
+    "database/migrations/0014_pool_search.sql": [],
+    "database/migrations/0015_pool_freshness_idx.sql": [],
+    "database/migrations/0016_publication_fact_release_idx.sql": [],
+    "database/migrations/0017_sitemap_idx.sql": [],
+    "database/migrations/0018_publication_sort_at.sql": [],
+    "database/migrations/0019_seo_indexed.sql": [],
+    "database/migrations/0020_story_summary.sql": [],
+    "database/migrations/0021_seo_auto_index.sql": [],
+    "database/migrations/0022_receipt_attempts_budgets.sql": [],
+    "database/migrations/0023_processing_retry.sql": [],
+    "database/migrations/0024_grouping_overrides_digest_inputs.sql": [],
+    "database/migrations/0026_source_icon_checked.sql": [],
+    "database/migrations/0027_feedback_forward_error.sql": [],
+    "database/migrations/0028_selectbench_mean_score.sql": [],
+    "database/migrations/0029_source_config_content_public.sql": [],
+    "database/migrations/0030_collection_url_index.sql": [],
+    "database/migrations/0031_selected_ready_index.sql": [],
+    "database/migrations/0032_regroup_pending.sql": [],
+    "database/migrations/0033_receipt_budget_index.sql": [],
+    "database/migrations/0034_lz4_toast.sql": [],
+    "database/migrations/0036_open_source_defaults.sql": [],
+    "database/migrations/0037_x_article.sql": [],
+    "database/migrations/0038_quote_translations.sql": [],
+    "database/seeds/lb-models-2026-09-29.json": [],
+    "database/seeds/lb-official-prices-2026-09-26.json": [],
+    "deploy/Caddyfile": [],
+    "docker-compose.yml": [],
+    "docs/architecture.md": [],
+    "docs/customize.md": [],
+    "docs/deploy.md": [],
+    "docs/leaderboard.md": [],
+    "docs/selection.md": [],
+    "docs/sources.md": [],
+    "industry/README.md": [],
+    "industry/brand/nameplates/index.json": [],
+    "industry/changelog.json": [],
+    "industry/features.ts": [],
+    "industry/gold.example.jsonl": [],
+    "industry/package.json": [],
+    "industry/pages/privacy.md": [],
+    "industry/pages/terms.md": [],
+    "industry/prompts/content-understanding.md": [],
+    "industry/prompts/group-batch.md": [],
+    "industry/prompts/group-definitions.md": [],
+    "industry/prompts/group-method.md": [],
+    "industry/prompts/group-pair.md": [],
+    "industry/prompts/group-signal.md": [],
+    "industry/prompts/identity-context.md": [],
+    "industry/prompts/prefilter.md": [],
+    "industry/prompts/report-daily-lead.md": [],
+    "industry/prompts/report-period.md": [],
+    "industry/prompts/rules-answer-first-summary.md": [],
+    "industry/prompts/rules-anti-hallucination.md": [],
+    "industry/prompts/rules-domain.md": [],
+    "industry/prompts/rules-self-contained-title.md": [],
+    "industry/prompts/safety.md": [],
+    "industry/prompts/selection-score.md": [],
+    "industry/prompts/story-digest.md": [],
+    "industry/prompts/structure.md": [],
+    "industry/prompts/summarize-article-empty.md": [],
+    "industry/prompts/summarize-article.md": [],
+    "industry/prompts/summarize-long-post-quoted.md": [],
+    "industry/prompts/summarize-long-post.md": [],
+    "industry/prompts/summarize-short-post-quoted.md": [],
+    "industry/prompts/summarize-short-post.md": [],
+    "industry/prompts/translate-body.md": [],
+    "industry/prompts/translate-post.md": [],
+    "industry/prompts/understand.md": [],
+    "industry/selection.ts": [],
+    "industry/site.ts": [],
+    "industry/sources.json": [],
+    "industry/taxonomy.ts": [],
+    "industry/topics.json": [],
+    "industry/tsconfig.json": [],
+    "package.json": [],
+    "packages/backend/package.json": [],
+    "packages/backend/src/admin/auth.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts"
+    ],
+    "packages/backend/src/admin/content.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/admin/sources.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/events/hot-read.ts",
+      "packages/backend/src/events/hot.ts",
+      "packages/backend/src/events/merge.ts",
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/url.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/admin/feedback.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/admin/sources.ts",
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/admin/models.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/providers/llm.ts"
+    ],
+    "packages/backend/src/admin/monitor.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/admin/sources.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/monitor/time.ts"
+    ],
+    "packages/backend/src/admin/runs.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/admin/sources.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/content.ts"
+    ],
+    "packages/backend/src/admin/selectbench.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/admin/settings.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/site/contact.ts"
+    ],
+    "packages/backend/src/admin/sources.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/publication.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/url.ts",
+      "packages/backend/src/sources/config-keys.ts",
+      "packages/backend/src/sources/json-list.ts",
+      "packages/backend/src/sources/rss.ts",
+      "packages/backend/src/sources/types.ts",
+      "packages/backend/src/sources/web-list.ts",
+      "packages/backend/src/sources/x.ts"
+    ],
+    "packages/backend/src/config.ts": [],
+    "packages/backend/src/content/extract.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/providers/jina.ts",
+      "packages/backend/src/providers/receipts.ts",
+      "packages/backend/src/providers/socialdata.ts",
+      "packages/backend/src/sources/x.ts"
+    ],
+    "packages/backend/src/content/materials.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/lib/url.ts"
+    ],
+    "packages/backend/src/content/sanitize.ts": [],
+    "packages/backend/src/db.ts": [
+      "packages/backend/src/config.ts"
+    ],
+    "packages/backend/src/editorial/analyze.ts": [
+      "packages/backend/src/content/extract.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/input.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/editorial/prompts.ts",
+      "packages/backend/src/editorial/vocabulary.ts",
+      "packages/backend/src/editorial/writing.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/providers/llm.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/editorial/input.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/media/images.ts",
+      "packages/backend/src/providers/llm.ts"
+    ],
+    "packages/backend/src/editorial/models.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/providers/llm.ts"
+    ],
+    "packages/backend/src/editorial/prompts.ts": [
+      "packages/backend/src/config.ts"
+    ],
+    "packages/backend/src/editorial/translate.ts": [
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/editorial/prompts.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/providers/llm.ts"
+    ],
+    "packages/backend/src/editorial/vocabulary.ts": [],
+    "packages/backend/src/editorial/writing.ts": [
+      "packages/backend/src/editorial/input.ts",
+      "packages/backend/src/editorial/prompts.ts",
+      "packages/backend/src/sources/x.ts"
+    ],
+    "packages/backend/src/events/digest.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/editorial/prompts.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/providers/llm.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/events/group.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/events/merge.ts",
+      "packages/backend/src/events/relate.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/providers/embeddings.ts",
+      "packages/backend/src/providers/llm.ts",
+      "packages/backend/src/providers/receipts.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/events/hot-read.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/media/imgproxy.ts"
+    ],
+    "packages/backend/src/events/hot.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/events/hot-read.ts"
+    ],
+    "packages/backend/src/events/merge.ts": [
+      "packages/backend/src/admin/auth.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/events/relate.ts": [
+      "packages/backend/src/editorial/prompts.ts"
+    ],
+    "packages/backend/src/ingest/items.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/lib/url.ts"
+    ],
+    "packages/backend/src/jobs/content.ts": [
+      "packages/backend/src/content/extract.ts",
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/analyze.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/providers/llm.ts",
+      "packages/backend/src/providers/receipts.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/jobs/events.ts": [
+      "packages/backend/src/events/digest.ts",
+      "packages/backend/src/events/group.ts",
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/jobs/notify.ts": [
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/media/prepare.ts",
+      "packages/backend/src/notify/selected.ts"
+    ],
+    "packages/backend/src/jobs/publication.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/events/hot.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/jobs/queue.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/jobs/sources.ts": [
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/sources/collect.ts",
+      "packages/backend/src/sources/mp.ts"
+    ],
+    "packages/backend/src/leaderboard/directory.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/configuration.ts": [],
+    "packages/backend/src/leaderboard/fetch/csv.ts": [],
+    "packages/backend/src/leaderboard/fetch/github.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/hf.ts": [
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/identity.ts": [
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/index.ts": [
+      "packages/backend/src/leaderboard/fetch/sources/arena.ts",
+      "packages/backend/src/leaderboard/fetch/sources/artificial-analysis.ts",
+      "packages/backend/src/leaderboard/fetch/sources/deepswe.ts",
+      "packages/backend/src/leaderboard/fetch/sources/epoch.ts",
+      "packages/backend/src/leaderboard/fetch/sources/eqbench.ts",
+      "packages/backend/src/leaderboard/fetch/sources/livebench.ts",
+      "packages/backend/src/leaderboard/fetch/sources/mercor.ts",
+      "packages/backend/src/leaderboard/fetch/sources/taptap.ts",
+      "packages/backend/src/leaderboard/fetch/sources/terminal-bench.ts",
+      "packages/backend/src/leaderboard/fetch/sources/vals.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/rank.ts": [],
+    "packages/backend/src/leaderboard/fetch/refresh.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/fetch/index.ts",
+      "packages/backend/src/leaderboard/fetch/store.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/leaderboard/method/run.ts",
+      "packages/backend/src/leaderboard/prices.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/arena.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/hf.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/artificial-analysis.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/deepswe.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/rank.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/epoch.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/csv.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/leaderboard/fetch/unzip.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/eqbench.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/github.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/livebench.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/mercor.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/rank.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/taptap.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/terminal-bench.ts": [
+      "packages/backend/src/leaderboard/fetch/github.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/sources/vals.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/http-fetch.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/store.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/fetch/configuration.ts",
+      "packages/backend/src/leaderboard/fetch/identity.ts",
+      "packages/backend/src/leaderboard/fetch/rank.ts",
+      "packages/backend/src/leaderboard/fetch/types.ts",
+      "packages/backend/src/lib/ids.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/types.ts": [
+      "packages/backend/src/leaderboard/fetch/configuration.ts"
+    ],
+    "packages/backend/src/leaderboard/fetch/unzip.ts": [],
+    "packages/backend/src/leaderboard/method/compute-worker.ts": [
+      "packages/backend/src/leaderboard/method/compute.ts",
+      "packages/backend/src/leaderboard/method/v15.ts"
+    ],
+    "packages/backend/src/leaderboard/method/compute.ts": [
+      "packages/backend/src/leaderboard/method/v15.ts"
+    ],
+    "packages/backend/src/leaderboard/method/inputs.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/method/v15.ts"
+    ],
+    "packages/backend/src/leaderboard/method/kemeny.ts": [],
+    "packages/backend/src/leaderboard/method/ndtr.ts": [],
+    "packages/backend/src/leaderboard/method/run.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/method/compute.ts",
+      "packages/backend/src/leaderboard/method/inputs.ts",
+      "packages/backend/src/leaderboard/method/v15.ts",
+      "packages/backend/src/lib/ids.ts"
+    ],
+    "packages/backend/src/leaderboard/method/v15.ts": [
+      "packages/backend/src/leaderboard/method/kemeny.ts",
+      "packages/backend/src/leaderboard/method/ndtr.ts"
+    ],
+    "packages/backend/src/leaderboard/prices.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/leaderboard/read.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/registry.ts"
+    ],
+    "packages/backend/src/leaderboard/registry.ts": [
+      "packages/backend/src/leaderboard/source-registry.json"
+    ],
+    "packages/backend/src/leaderboard/source-registry.json": [],
+    "packages/backend/src/lib/cache.ts": [],
+    "packages/backend/src/lib/cursor.ts": [
+      "packages/backend/src/lib/ids.ts"
+    ],
+    "packages/backend/src/lib/http-fetch.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/url.ts"
+    ],
+    "packages/backend/src/lib/ids.ts": [],
+    "packages/backend/src/lib/text.ts": [],
+    "packages/backend/src/lib/url.ts": [],
+    "packages/backend/src/media/images.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/media/renditions.ts"
+    ],
+    "packages/backend/src/media/imgproxy.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/media/renditions.ts"
+    ],
+    "packages/backend/src/media/prepare.ts": [
+      "packages/backend/src/media/images.ts",
+      "packages/backend/src/publication/detail.ts",
+      "packages/backend/src/publication/items.ts"
+    ],
+    "packages/backend/src/media/renditions.ts": [],
+    "packages/backend/src/monitor/assemble.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/monitor/recognize.ts",
+      "packages/backend/src/monitor/time.ts"
+    ],
+    "packages/backend/src/monitor/read.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/monitor/recognize.ts": [
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/monitor/time.ts",
+      "packages/backend/src/providers/llm.ts"
+    ],
+    "packages/backend/src/monitor/scan.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/monitor/assemble.ts",
+      "packages/backend/src/monitor/read.ts",
+      "packages/backend/src/monitor/recognize.ts",
+      "packages/backend/src/notify/deliver.ts",
+      "packages/backend/src/providers/socialdata.ts"
+    ],
+    "packages/backend/src/monitor/time.ts": [],
+    "packages/backend/src/notify/deliver.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/notify/feishu.ts"
+    ],
+    "packages/backend/src/notify/feishu.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/notify/selected.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/notify/deliver.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/operations/alerts.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/notify/feishu.ts",
+      "packages/backend/src/operations/backup.ts"
+    ],
+    "packages/backend/src/operations/backup.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/operations/feedback.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/notify/feishu.ts"
+    ],
+    "packages/backend/src/operations/heartbeat.ts": [
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/operations/indexnow.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/operations/reports.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/notify/feishu.ts"
+    ],
+    "packages/backend/src/operations/retention.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts"
+    ],
+    "packages/backend/src/operations/watch.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/notify/feishu.ts"
+    ],
+    "packages/backend/src/providers/dajiala.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/providers/embeddings.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/providers/jina.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/providers/llm.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/providers/receipts.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/ids.ts"
+    ],
+    "packages/backend/src/providers/socialdata.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/publication/availability.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/publication/rules.ts"
+    ],
+    "packages/backend/src/publication/detail.ts": [
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/items.ts",
+      "packages/backend/src/publication/links.ts",
+      "packages/backend/src/publication/rules.ts"
+    ],
+    "packages/backend/src/publication/feeds.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/items.ts",
+      "packages/backend/src/publication/links.ts",
+      "packages/backend/src/publication/reports.ts"
+    ],
+    "packages/backend/src/publication/followups.ts": [
+      "packages/backend/src/publication/groups.ts"
+    ],
+    "packages/backend/src/publication/groups.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cursor.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/items.ts",
+      "packages/backend/src/publication/timeline.ts"
+    ],
+    "packages/backend/src/publication/items.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/rules.ts"
+    ],
+    "packages/backend/src/publication/links.ts": [
+      "packages/backend/src/config.ts"
+    ],
+    "packages/backend/src/publication/llms.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/publication/monitor.ts": [
+      "packages/backend/src/monitor/read.ts"
+    ],
+    "packages/backend/src/publication/og.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/publication/rules.ts"
+    ],
+    "packages/backend/src/publication/pool.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/publication/items.ts"
+    ],
+    "packages/backend/src/publication/publish.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/publication/links.ts",
+      "packages/backend/src/publication/rules.ts"
+    ],
+    "packages/backend/src/publication/reports.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cache.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/publication/rules.ts": [],
+    "packages/backend/src/publication/sitemap.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/leaderboard/read.ts",
+      "packages/backend/src/lib/cache.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/publication/links.ts",
+      "packages/backend/src/publication/topics.ts"
+    ],
+    "packages/backend/src/publication/stories.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/events/digest.ts",
+      "packages/backend/src/events/hot-read.ts",
+      "packages/backend/src/events/hot.ts",
+      "packages/backend/src/media/imgproxy.ts",
+      "packages/backend/src/publication/links.ts"
+    ],
+    "packages/backend/src/publication/timeline.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cursor.ts",
+      "packages/backend/src/publication/items.ts"
+    ],
+    "packages/backend/src/publication/topics.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cache.ts",
+      "packages/backend/src/publication/items.ts"
+    ],
+    "packages/backend/src/publication/v1.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cursor.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/publication/items.ts",
+      "packages/backend/src/publication/pool.ts",
+      "packages/backend/src/publication/publish.ts"
+    ],
+    "packages/backend/src/reports/compose.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/editorial/models.ts",
+      "packages/backend/src/editorial/prompts.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/providers/llm.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/site/contact.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/media/imgproxy.ts"
+    ],
+    "packages/backend/src/site/meta.ts": [
+      "packages/backend/src/config.ts"
+    ],
+    "packages/backend/src/site/stats.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/cache.ts",
+      "packages/backend/src/publication/items.ts"
+    ],
+    "packages/backend/src/sources/collect.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/providers/receipts.ts",
+      "packages/backend/src/sources/config-keys.ts",
+      "packages/backend/src/sources/json-list.ts",
+      "packages/backend/src/sources/rss.ts",
+      "packages/backend/src/sources/types.ts",
+      "packages/backend/src/sources/web-list.ts",
+      "packages/backend/src/sources/x.ts"
+    ],
+    "packages/backend/src/sources/config-keys.ts": [
+      "packages/backend/src/sources/types.ts"
+    ],
+    "packages/backend/src/sources/icons.ts": [
+      "packages/backend/src/db.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/media/images.ts"
+    ],
+    "packages/backend/src/sources/json-list.ts": [
+      "packages/backend/src/config.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/sources/types.ts"
+    ],
+    "packages/backend/src/sources/mp.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/db.ts",
+      "packages/backend/src/jobs/content.ts",
+      "packages/backend/src/jobs/queue.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/lib/url.ts",
+      "packages/backend/src/providers/dajiala.ts",
+      "packages/backend/src/providers/receipts.ts"
+    ],
+    "packages/backend/src/sources/rss.ts": [
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/lib/url.ts",
+      "packages/backend/src/sources/types.ts"
+    ],
+    "packages/backend/src/sources/types.ts": [
+      "packages/backend/src/content/materials.ts"
+    ],
+    "packages/backend/src/sources/web-list.ts": [
+      "packages/backend/src/content/extract.ts",
+      "packages/backend/src/content/sanitize.ts",
+      "packages/backend/src/lib/http-fetch.ts",
+      "packages/backend/src/lib/text.ts",
+      "packages/backend/src/providers/jina.ts",
+      "packages/backend/src/sources/types.ts"
+    ],
+    "packages/backend/src/sources/x.ts": [
+      "packages/backend/src/content/materials.ts",
+      "packages/backend/src/lib/ids.ts",
+      "packages/backend/src/providers/receipts.ts",
+      "packages/backend/src/providers/socialdata.ts",
+      "packages/backend/src/sources/types.ts"
+    ],
+    "packages/backend/tsconfig.json": [],
+    "packages/contracts/package.json": [],
+    "packages/contracts/src/http-policy.ts": [],
+    "packages/contracts/src/index.ts": [],
+    "packages/contracts/src/leaderboard.ts": [
+      "packages/contracts/src/taxonomy.ts"
+    ],
+    "packages/contracts/src/mcp.ts": [],
+    "packages/contracts/src/monitor.ts": [],
+    "packages/contracts/src/site.ts": [
+      "packages/contracts/src/taxonomy.ts"
+    ],
+    "packages/contracts/src/taxonomy.ts": [],
+    "packages/contracts/src/time.ts": [],
+    "packages/contracts/tsconfig.json": [],
+    "reference/public-v1.openapi.json": [],
+    "scripts/collect.ts": [],
+    "scripts/delete-sources.ts": [],
+    "scripts/enqueue-analysis.ts": [],
+    "scripts/eval-selection.ts": [],
+    "scripts/import-leaderboard-prices.ts": [],
+    "scripts/init-env.ts": [],
+    "scripts/lb-fetch-check.ts": [],
+    "scripts/lb-round.ts": [],
+    "scripts/mcp-check.ts": [],
+    "scripts/migrate.ts": [],
+    "scripts/nameplates.ts": [],
+    "scripts/regroup-events.ts": [],
+    "scripts/seed.ts": [],
+    "scripts/smoke.ts": [],
+    "tests/alerts.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/analyze-shutdown.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/analyze.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/collection.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/default-model.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/embeddings.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/events.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/feedback-upload.test.ts": [
+      "apps/api/src/app.ts",
+      "tests/setup.ts"
+    ],
+    "tests/feedback.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/hot-avatar-payload.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/icons.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/leaderboard-worker.test.ts": [],
+    "tests/listings.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/materials.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/mcp-shutdown.test.ts": [
+      "apps/api/src/routes/mcp.ts",
+      "tests/setup.ts"
+    ],
+    "tests/media-performance.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/monitor.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/publication.test.ts": [
+      "apps/api/src/app.ts",
+      "apps/api/src/og/poster.ts",
+      "apps/api/src/og/render.ts",
+      "tests/setup.ts"
+    ],
+    "tests/receipts.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/report-lead.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/rss-conditional.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/setup.ts": [],
+    "tests/signals.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/source-rules.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/sources.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/translate-shutdown.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/translate.test.ts": [
+      "apps/api/src/app.ts",
+      "tests/setup.ts"
+    ],
+    "tests/tsconfig.json": [],
+    "tests/url.test.ts": [],
+    "tests/x-article.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tests/x-shards.test.ts": [
+      "tests/setup.ts"
+    ],
+    "tsconfig.base.json": []
+  }
+}
