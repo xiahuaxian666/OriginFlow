@@ -39,3 +39,13 @@
 ## 写代码
 
 匹配周围代码的写法、命名和注释密度。选能清楚解决问题的简单方案，只定义正在使用的抽象。验证改动涉及的重要行为，不为简单的样式改动写测试。
+
+## Cursor Cloud specific instructions
+
+Cloud Agent 开机时会跑环境的 `start`：PostgreSQL、迁移、示范数据，以及三个开发进程。依赖已在 `install` 里装好，一般不用再执行 `npm ci`。
+
+- Node.js 24.22 安装在 `/usr/local/bin`，并链接到 `/usr/local/cargo/bin`（该目录在 PATH 最前）。平台自带的 `/exec-daemon/node` 是 22，直接调用那个路径会低于仓库要求的 `>=24.11`。
+- PostgreSQL 16 只监听本机，`127.0.0.1` 使用 trust。站点库是 `aihot`，测试库是 `aihot_test`。连接串：`postgres://ubuntu@127.0.0.1:5432/aihot`。测试用 `DATABASE_URL=postgres://ubuntu@127.0.0.1:5432/aihot_test npm test`（库已迁移）。
+- 第一次启动会在仓库根目录生成 `.env`（已 gitignore）。采集和模型调用是关的：`COLLECT_ENABLED=false`、`MODEL_CALLS_ENABLED=false`，飞书和 IndexNow 也关着。`DEV_AUTH_ROLE=admin`，所以开发时打开 `/admin` 不用密码。这里没有真实的模型 API Key；要连模型时再把 key 写进 `.env`，并把 `MODEL_CALLS_ENABLED` 改为 `true`。
+- 三个 tmux 会话：`aihot-api`（`npm run dev:api`，3001）、`aihot-worker`（`npm run dev:worker`）、`aihot-web`（`npm run dev:web`，http://127.0.0.1:3000）。日志分别在 `/tmp/aihot-api.log`、`/tmp/aihot-worker.log`、`/tmp/aihot-web.log`。网页把 `/api/*` 转到 3001。
+- 模型榜页面在还没有一轮结果时返回 503，这是空库的正常状态。`node scripts/smoke.ts --base http://127.0.0.1:3000` 会把这种情况记为跳过。
